@@ -1,0 +1,5 @@
+<ul>
+  {{#each model as |legislator|}}
+    <li> {{#link-to 'politician' legislator.bioguide_id}}{{legislator.first_name}} {{legislator.last_name}}{{/link-to}}<br>Contact: <a href= {{legislator.contact_form}}>{{legislator.contact_form}}</a></li>
+  {{/each}}
+</ul>

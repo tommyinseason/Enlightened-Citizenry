@@ -1,0 +1,9 @@
+<ul>
+  {{#each model.committees as |committee|}}
+    <li>{{committee.name}}</li>
+      <ul>
+        <li>{{committee.chamber}}</li>
+        <li>{{committee.subcommittee}}</li>
+      </ul>
+  {{/each}}
+</ul>
